@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/396257f814.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Logo2.png",class="logo">
+              <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+              </ul>
+              <i class="fa-solid fa-bars" onclick="openmenu()"></i> 
+            </nav>
+            <div class="header-text">
+                <p>Data Science & ML</p>
+                <h1>Hi,I'm <span>Alwin</span></h1>
+                <h2></h2class>"Let passion <br>drive your profession"</h2>
+
+            </div>
+        </div>
+    </div>
+<!-------about------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About me</h1>
+                    <p>Hello there! I'm Alwin, a passionate and enthusiastic student with a love for Data Science and Machine Learning. I'm pursuing B.tech with a domain in AI and Data Science. As a pursuing graduate, I am eager to embark on a journey of learning, growth, and creative exploration in the world of "Technology".
+                    </p>
+                    <p>I'm driven by the oppurtunity to turn creative ideas into tangible solutions. I thrive on the excitemnet of creating something new and the challenge of solving problems. I believe in the power of Data to not only transform industries but also to make a positive impact in the society.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web interfaces</li>
+                            <li><span>Machine Learning</span><br>Developing accurate ml models</li>
+                            <li><span>Data Science</span><br>Analysis on Data</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Intern</span><br>Virtual Tech Services<br>Machine Learning<br>June 2023-July 2023</li>
+                            <li><span>Intern(online)</span><br>IBM Skillsbuild-AICTE<br>Machine Learning<br>June 2023</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>10th</span><br>St. Michaels Academy <br>79%</li>
+                            <li><span>12th</span><br>St. Michaels Academy <br>80%</li>
+                            <li><span>B.tech</span><br>Prathyusha Engineering College<br> 8.08 CGPA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<!-------services------------->    
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>UI/UX</h2>
+                <p>"The user experience (UX) is how a user interacts with and experiences a product, system or service. Improving user experience is important to most companies, designers, and creators when creating and refining products.
+                </p>
+                
+            </div>
+            <div>
+                <i class="fa-solid fa-chart-simple"></i>
+                <h2>Data Science</h2>
+                <p>“Data science is the study of extracting useful insights from data using scientific methods, statistical techniques, and computational algorithms.“
+                </p>
+                
+            </div>
+            <div>
+                <i class="fa-solid fa-lines-leaning"></i>
+                <h2>Machine Learning</h2>
+                <p>"Machine learning is a method of data analysis that automates analytical model building. It is a branch of artificial intelligence based on the idea that systems can learn from data, identify patterns and make decisions with minimal human intervention."
+                </p>
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+<!---------portfolio-------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/notes.png" >
+                <div class="layer">
+                    <h3>Notes app</h3>
+                    <p>An app to save daily notes from anywhere at anytime</p>
+                    <a href="https://github.com/AlwinRP/NotesVaultapp"><i><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/powerbi.png" >
+                <div class="layer">
+                    <h3>Power Bi</h3>
+                    <p>A dashboard for sales managment using power bi</p>
+                    <a href="https://github.com/AlwinRP/Sales_insight"><i><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/cataract.png" >
+                <div class="layer">
+                    <h3>Cataract Classification</h3>
+                    <p>An app to classify eye cataract using deep learning using tensorflow</p>
+                    <a href="https://github.com/AlwinRP/Cataract-Detection"><i><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <a id="showButton" class="btn">See More</a>
+
+    </div>
+</div>
+<!---------contact-------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>alwinpaldano@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>7305295261</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100076872601168"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/AlwinPaldano"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/alwin_rp13/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/alwin-paldano-933a84225/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/logo.png" download class="btn btn2">Download CV</a>
+        </div>
+    </div>
+    
+</div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+
+    }
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0%";
+    }
+    function closemenu(){
+        sidemenu.style.right="-45%"
+    }
+
+</script>    
+<script>
+    document.getElementById('showButton').addEventListener('click', function() {
+  var containers = document.querySelectorAll('.work.hidden'); // Get all containers
+  var button = document.getElementById('showButton');
+  containers.forEach(function(container) {
+    if (container.style.display === 'none') {
+      container.style.display = 'block'; // Set display to block to show containers
+      setTimeout(function() {
+        container.style.opacity = '1'; // Set opacity to 1 after a short delay for the transition effect
+        container.style.transform = 'translateY(0)';
+      }, 10);
+      button.textContent = 'See Less';
+    } else {
+      container.style.opacity = '0'; // Set opacity to 0 to hide containers with transition
+      container.style.transform = 'translateY(0)'
+      setTimeout(function() {
+        container.style.display = 'none'; // Set display to none after the transition effect
+      }, 300); // 300ms is the duration of the transition
+      button.textContent = 'See More';
+    }
+  });
+});
+
+
+</script>
+</body>
+</html>
